@@ -1,0 +1,17 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# VS Code
+.vscode/
+
+# Virtual environments
+venv/
+.venv/
+
+# Generated outputs
+outputs/
+backend/outputs/
