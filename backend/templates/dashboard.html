@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Mentor Dashboard</title>
+
+    <style>
+        /* =========================
+           BACKGROUND
+        ==========================*/
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #f8fbff);
+        }
+
+        /* =========================
+           HEADER
+        ==========================*/
+        .header {
+            background: #4a90e2;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        /* =========================
+           MAIN CONTAINER
+        ==========================*/
+        .container {
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        /* =========================
+           STUDENT CARD
+        ==========================*/
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* =========================
+           BUTTONS
+        ==========================*/
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            background: #4a90e2;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #357ab7;
+        }
+
+        /* =========================
+           GRID SECTION
+        ==========================*/
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .box {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .box h3 {
+            margin: 10px 0;
+        }
+
+        /* =========================
+           FOOTER BUTTONS
+        ==========================*/
+        .actions {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        🤖 AI Mentoring System Dashboard
+    </div>
+
+    <div class="container">
+
+        <!-- =========================
+         STUDENT INFO
+    ==========================-->
+        <div class="card">
+
+            <h2>Welcome {{ student.StudentID }}</h2>
+
+            <p><b>Program:</b> {{ student.Program }}</p>
+            <p><b>Semester:</b> {{ student.Semester }}</p>
+            <p><b>GPA:</b> {{ student.GPA }}</p>
+            <p><b>Attendance:</b> {{ student.Attendance }}%</p>
+
+        </div>
+
+        <!-- =========================
+     AI INSIGHTS GRID
+==========================-->
+        <div class="grid">
+
+            <div class="box">
+                <h3>📊 Student Risk Index (SRI)</h3>
+                <p>{{ sri }}</p>
+            </div>
+
+            <div class="box">
+                <h3>🚦 Risk Category</h3>
+                <p>{{ risk_category }}</p>
+            </div>
+
+            <div class="box">
+                <h3>⚠️ Risk Status</h3>
+                <p>{{ risk_status }}</p>
+            </div>
+
+            <div class="box">
+                <h3>📝 Performance Summary</h3>
+                <p>{{ performance_summary }}</p>
+            </div>
+
+            <div class="box">
+                <h3>💡 AI-Based Suggestions</h3>
+                <p>{{ suggestions }}</p>
+            </div>
+
+        </div>
+        <!-- =========================
+         ACTION BUTTONS
+    ==========================-->
+        <div class="actions">
+
+            <a href="/chatbot" class="btn">💬 Open AI Chatbot</a>
+
+            <a href="/mentors" class="btn">👨‍🏫 View Mentors</a>
+
+            <a href="/reports" class="btn">📊 View Reports</a>
+
+            <a href="/logout" class="btn">🚪 Logout</a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

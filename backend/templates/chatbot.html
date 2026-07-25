@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mentor Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+<nav>
+    <h2>🤖 AI Mentor Chatbot</h2>
+    <div>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/mentors">Mentors</a>
+        <a href="/reports">Reports</a>
+        <a href="/logout">Logout</a>
+    </div>
+</nav>
+
+<!-- =========================
+     CHATBOT CONTAINER
+========================= -->
+<div class="chat-container">
+
+    <h2>Ask Your AI Mentor</h2>
+
+    <!-- =========================
+     CONTROL PANEL
+========================= -->
+<div class="card" style="margin-bottom: 20px;">
+
+    <!-- Voice Controls -->
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:15px;">
+        <button onclick="startVoice()">🎤 Speak</button>
+        <button onclick="stopVoice()">⏹ Stop Voice</button>
+
+        <select id="language-select" style="width:auto;">
+            <option value="en-US">English</option>
+            <option value="hi-IN">Hindi</option>
+            <option value="ur-PK">Urdu</option>
+        </select>
+    </div>
+
+    <!-- Voice Output Toggle -->
+    <div style="margin-bottom:15px;">
+        <label style="display:flex; align-items:center; gap:8px;">
+            <input type="checkbox" id="voice-output-toggle" checked>
+            🔊 Voice Output
+        </label>
+    </div>
+
+    <!-- Category Buttons -->
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <button onclick="setCategory('Academic')">📘 Academic</button>
+        <button onclick="setCategory('Wellness')">🧠 Wellness</button>
+        <button onclick="setCategory('Career')">💼 Career</button>
+    </div>
+
+    <p style="margin-top:15px; color:#475569;">
+        Current Category:
+        <strong id="current-category">{{ category }}</strong>
+    </p>
+</div>
+
+    <!-- =========================
+         CHAT BOX
+    ========================= -->
+    <div id="chat-box" class="card" style="height: 450px; overflow-y: auto;">
+        <div class="bot-box">
+            <h3>AI Mentor</h3>
+            <p>Hello! How can I help you today?</p>
+        </div>
+    </div>
+
+    <!-- =========================
+         INPUT AREA
+    ========================= -->
+    <div style="display:flex; gap:10px; margin-top:20px;">
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Type your question..."
+            onkeypress="handleKeyPress(event)"
+        >
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

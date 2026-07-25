@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reports</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #e3f2fd, #f8fbff);
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>📊 AI Reports Dashboard</h2>
+
+    <div class="card">
+        <h3>Category Distribution</h3>
+        <img src="/outputs/category_pie.png">
+
+    </div>
+
+    <div class="card">
+        <h3>Feature Importance</h3>
+        <img src="/outputs/feature_importance.png">
+    </div>
+
+    <div class="card">
+        <h3>Confusion Matrix</h3>
+        <img src="/outputs/confusion_matrix.png">
+    </div>
+
+     <div class="card">
+        <h3>Heatmap</h3>
+        <img src="/outputs/heatmap.png" alt="Heatmap">
+    </div>
+
+    <div class="card">
+        <h3>SRI Distribution</h3>
+        <img src="/outputs/sri_distribution.png" alt="SRI Distribution">
+    </div>
+
+</div>
+
+</body>
+</html>

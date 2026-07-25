@@ -1,0 +1,16 @@
+mentor_id,mentor_name,expertise,mentor_type,availability_hours
+M1,Aditi Sharma,Python & Data Science,Academic Mentor,5
+M2,Rahul Verma,Stress Management,Wellness Mentor,4
+M3,Neha Singh,Career Guidance,Career Mentor,6
+M4,Amit Kumar,Cloud & AWS,Academic Mentor,3
+M5,Pooja Mehta,Motivation Coaching,Wellness Mentor,2
+M6,Ravi Sharma,Java Programming,Academic Mentor,5
+M7,Sneha Gupta,Interview Preparation,Career Mentor,6
+M8,Vikram Singh,Resume Building,Career Mentor,4
+M9,Anjali Verma,Mental Health Support,Wellness Mentor,3
+M10,Deepak Yadav,Data Structures,Academic Mentor,5
+M11,Simran Kaur,Communication Skills,Career Mentor,4
+M12,Arjun Patel,Machine Learning,Academic Mentor,6
+M13,Kavita Joshi,Anxiety Management,Wellness Mentor,3
+M14,Manish Rao,System Design,Academic Mentor,5
+M15,Neha Kapoor,Placement Training,Career Mentor,6

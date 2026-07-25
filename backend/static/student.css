@@ -1,0 +1,499 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    overflow-x:hidden;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#1f2937;
+    color:#fff;
+    position:fixed;
+    left:0;
+    top:0;
+    transition:.3s;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    border-bottom:1px solid rgba(255,255,255,.15);
+    margin-bottom:15px;
+}
+
+.sidebar a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#d1d5db;
+    text-decoration:none;
+    padding:15px 20px;
+    transition:.3s;
+    font-size:16px;
+}
+
+.sidebar a i{
+    font-size:18px;
+}
+
+.sidebar a:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+.sidebar a.active{
+    background:#2563eb;
+    color:#fff;
+    border-left:5px solid #fff;
+}
+
+/* ==========================
+   MAIN CONTENT
+========================== */
+
+.main-content{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    min-height:100vh;
+    padding-bottom:30px;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    background:#fff;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.navbar h3{
+    font-weight:700;
+}
+
+.dropdown-toggle{
+    border:none;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+    border:none;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.card-header{
+    font-weight:600;
+}
+
+.card-body{
+    background:#fff;
+}
+
+/* ==========================
+   SEARCH
+========================== */
+
+#searchStudent{
+    height:45px;
+    border-radius:10px;
+    border:1px solid #d1d5db;
+}
+
+#searchStudent:focus{
+    box-shadow:0 0 8px rgba(37,99,235,.2);
+    border-color:#2563eb;
+}
+
+/* ==========================
+   FILTERS
+========================== */
+
+.form-select{
+    height:45px;
+    border-radius:10px;
+}
+
+.form-select:focus{
+    box-shadow:none;
+    border-color:#2563eb;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+    border-radius:8px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#2563eb;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+.btn-success{
+    border:none;
+}
+
+.btn-warning{
+    color:#fff;
+}
+
+.btn-danger{
+    border:none;
+}
+
+.btn i{
+    margin-right:5px;
+}
+
+/* ==========================
+   PAGE TITLE
+========================== */
+
+h3{
+    color:#111827;
+}
+
+.text-muted{
+    font-size:14px;
+}
+/* ==========================
+   STUDENTS TABLE
+========================== */
+
+.table{
+    margin-bottom:0;
+    background:#fff;
+}
+
+.table thead{
+    background:#2563eb;
+    color:#fff;
+}
+
+.table thead th{
+    border:none;
+    font-weight:600;
+    padding:15px;
+    vertical-align:middle;
+}
+
+.table tbody td{
+    padding:15px;
+    vertical-align:middle;
+}
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:#f8f9ff;
+    transform:scale(1.002);
+}
+
+/* ==========================
+   BADGES
+========================== */
+
+.badge{
+    padding:8px 12px;
+    font-size:13px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.bg-success{
+    background:#16a34a !important;
+}
+
+.bg-danger{
+    background:#dc2626 !important;
+}
+
+.bg-warning{
+    background:#f59e0b !important;
+}
+
+/* ==========================
+   ACTION BUTTONS
+========================== */
+
+.btn-sm{
+    border-radius:8px;
+    padding:6px 12px;
+    margin-right:5px;
+}
+
+.btn-sm i{
+    margin-right:4px;
+}
+
+/* ==========================
+   MODAL
+========================== */
+
+.modal-content{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.modal-header{
+    border:none;
+}
+
+.modal-body{
+    padding:25px;
+}
+
+.modal-footer{
+    border:none;
+}
+
+.modal-title{
+    font-weight:600;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+label{
+    font-weight:600;
+    margin-bottom:6px;
+}
+
+.form-control{
+    border-radius:8px;
+}
+
+.form-control:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 5px rgba(37,99,235,.2);
+}
+
+/* ==========================
+   PAGINATION
+========================== */
+
+.pagination{
+    margin-top:20px;
+}
+
+.page-link{
+    color:#2563eb;
+}
+
+.page-item.active .page-link{
+    background:#2563eb;
+    border-color:#2563eb;
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f5f9;
+}
+
+/* ==========================
+   CARD ANIMATION
+========================== */
+
+.card{
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+/* ==========================
+   TABLE RESPONSIVE
+========================== */
+
+.table-responsive{
+    border-radius:12px;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:992px){
+
+.sidebar{
+
+    width:80px;
+
+}
+
+.sidebar .logo{
+
+    font-size:18px;
+
+}
+
+.sidebar a{
+
+    justify-content:center;
+
+    font-size:0;
+
+}
+
+.sidebar a i{
+
+    font-size:20px;
+
+    margin:0;
+
+}
+
+.main-content{
+
+    margin-left:80px;
+
+    width:calc(100% - 80px);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.main-content{
+
+    margin-left:0;
+
+    width:100%;
+
+}
+
+.sidebar{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:auto;
+
+}
+
+.navbar{
+
+    padding:10px;
+
+}
+
+.card{
+
+    margin-bottom:20px;
+
+}
+
+.btn{
+
+    width:100%;
+    margin-bottom:10px;
+
+}
+
+.table{
+
+    font-size:14px;
+
+}
+
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark-mode{
+
+    background:#111827;
+    color:#fff;
+
+}
+
+body.dark-mode .navbar{
+
+    background:#1f2937 !important;
+    color:#fff;
+
+}
+
+body.dark-mode .card{
+
+    background:#1f2937;
+    color:#fff;
+
+}
+
+body.dark-mode .table{
+
+    color:#fff;
+
+}
+
+body.dark-mode .table tbody tr:hover{
+
+    background:#374151;
+
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select{
+
+    background:#374151;
+    color:#fff;
+    border:1px solid #4b5563;
+
+}
+
+body.dark-mode .modal-content{
+
+    background:#1f2937;
+    color:#fff;
+
+}

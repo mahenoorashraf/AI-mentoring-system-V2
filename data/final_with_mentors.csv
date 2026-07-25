@@ -1,0 +1,51 @@
+student_id,age,program,semester,gpa,attendance,assignments_completion,stress_level,sleep_hours,mental_wellbeing,productivity_score,distractions,career_clarity,skill_readiness,engagement_score,APS,WWS,PTMS,CRS,SRI,Category,Cluster,Mentor_Suggestion,Assigned_Mentor,Mentor_Type,Mentor_Expertise
+S001,24,B.Sc,7,8.51,72,65,8,8.4,6,1,8,4,6,65,7.986,4.5600000000000005,2.15,4.800000000000001,4.8740000000000006,Yellow,0,Needs improvement | Manage stress | Career guidance needed,Neha Singh,Career Mentor,Career Guidance
+S002,21,MBA,2,8.74,100,78,4,7.7,5,4,10,3,7,37,9.244,4.88,3.9,4.6,5.656000000000001,Yellow,0,Needs improvement | Career guidance needed,Sneha Gupta,Career Mentor,Interview Preparation
+S003,22,B.Sc,2,4.91,62,52,1,8.8,1,5,10,10,10,87,5.426,3.82,3.1,10.0,5.5865,Yellow,2,Needs improvement | Focus on academics,Neha Kapoor,Career Mentor,Placement Training
+S004,24,MCA,4,6.47,98,69,8,5.7,8,10,10,5,10,89,7.802,4.68,6.449999999999999,7.0,6.483,Blue,1,"Doing well, improve further | Manage stress | Improve sleep",Arjun Patel,Academic Mentor,Machine Learning
+S005,20,B.Sc,2,5.14,65,85,4,6.8,5,10,2,5,3,79,5.683999999999999,4.5200000000000005,8.85,4.2,5.8135,Yellow,1,Needs improvement | Focus on academics | Career guidance needed,Aditi Sharma,Academic Mentor,Python & Data Science
+S006,25,MCA,2,9.25,67,68,6,6.9,5,5,3,3,7,57,8.23,3.96,5.300000000000001,4.6,5.522500000000001,Yellow,0,Needs improvement | Career guidance needed,Ravi Sharma,Academic Mentor,Java Programming
+S007,22,MCA,6,7.93,86,75,8,8.9,7,7,9,9,3,70,8.198,5.360000000000001,5.45,6.6,6.402000000000001,Blue,1,"Doing well, improve further | Manage stress",Deepak Yadav,Academic Mentor,Data Structures
+S008,22,B.Tech,4,6.32,68,52,4,4.4,4,4,7,4,2,93,6.5120000000000005,2.96,3.1999999999999997,3.2,3.968,Red,0,Immediate mentor support needed | Improve sleep | Career guidance needed,Manish Rao,Academic Mentor,System Design
+S009,24,B.Sc,6,4.85,96,68,3,5.5,6,1,4,5,10,56,6.75,4.9,3.1000000000000005,7.0,5.4375,Yellow,2,Needs improvement | Improve sleep,Rahul Verma,Wellness Mentor,Stress Management
+S010,19,B.Tech,7,6.21,92,69,9,5.0,4,5,10,4,4,92,7.406000000000001,1.7000000000000006,3.95,4.0,4.264,Yellow,0,Needs improvement | Manage stress | Improve sleep | Career guidance needed,Vikram Singh,Career Mentor,Resume Building
+S011,20,B.Sc,8,6.29,83,81,3,5.3,3,7,5,5,8,46,7.094,3.02,6.55,6.2,5.716,Yellow,1,Needs improvement | Improve sleep,Simran Kaur,Career Mentor,Communication Skills
+S012,24,B.Sc,7,8.51,74,56,9,6.4,7,10,2,7,9,62,8.065999999999999,4.0600000000000005,7.4,7.800000000000001,6.8315,Blue,1,"Doing well, improve further | Manage stress",Amit Kumar,Academic Mentor,Cloud & AWS
+S013,20,B.Tech,8,8.01,91,90,2,5.9,8,10,8,9,7,58,8.446,6.5600000000000005,7.9,8.2,7.776499999999999,Blue,1,"Doing well, improve further | Improve sleep",Anjali Verma,Wellness Mentor,Mental Health Support
+S014,20,B.Tech,6,9.38,91,82,2,6.0,4,6,4,7,1,42,9.268,4.200000000000001,6.300000000000001,4.6000000000000005,6.0920000000000005,Blue,0,"Doing well, improve further | Career guidance needed",Kavita Joshi,Wellness Mentor,Anxiety Management
+S015,25,B.Sc,7,7.1,83,89,2,8.2,2,5,9,5,3,75,7.58,3.88,5.15,4.2,5.2025,Yellow,0,Needs improvement | Career guidance needed,Neha Singh,Career Mentor,Career Guidance
+S016,22,MBA,4,5.16,100,88,6,8.7,10,4,5,10,9,64,7.096,7.680000000000001,5.4,9.6,7.444000000000001,Blue,2,"Doing well, improve further",Pooja Mehta,Wellness Mentor,Motivation Coaching
+S017,21,MCA,1,8.42,71,67,3,4.4,3,2,9,10,1,35,7.891999999999999,2.66,2.55,6.4,4.875500000000001,Yellow,0,Needs improvement | Improve sleep,Sneha Gupta,Career Mentor,Interview Preparation
+S018,25,B.Tech,6,8.68,98,89,9,5.0,1,4,4,7,9,98,9.128,-0.0999999999999996,5.65,7.800000000000001,5.6195,Yellow,0,Needs improvement | Manage stress | Improve sleep,Neha Kapoor,Career Mentor,Placement Training
+S019,25,MCA,8,7.59,61,50,4,7.4,8,10,10,10,8,76,6.994,6.56,5.5,9.2,7.0635,Blue,2,"Doing well, improve further",Arjun Patel,Academic Mentor,Machine Learning
+S020,20,MBA,5,8.74,62,60,1,5.8,3,10,5,5,1,54,7.724,3.82,7.0,3.4,5.486,Yellow,1,Needs improvement | Improve sleep | Career guidance needed,Aditi Sharma,Academic Mentor,Python & Data Science
+S021,23,MBA,8,7.22,96,77,4,5.3,10,3,9,3,6,95,8.172,6.920000000000001,3.55,4.2,5.710500000000001,Yellow,0,Needs improvement | Improve sleep | Career guidance needed,Ravi Sharma,Academic Mentor,Java Programming
+S022,22,MBA,5,7.38,76,74,1,5.5,7,10,8,7,5,39,7.468,6.1000000000000005,7.1,6.2,6.717,Blue,1,"Doing well, improve further | Improve sleep",Deepak Yadav,Academic Mentor,Data Structures
+S023,19,B.Tech,2,6.85,61,99,5,5.6,10,1,3,2,6,85,6.549999999999999,6.74,4.85,3.6000000000000005,5.4350000000000005,Yellow,1,Needs improvement | Improve sleep | Career guidance needed,Manish Rao,Academic Mentor,System Design
+S024,25,MBA,7,4.64,61,72,4,8.2,5,8,1,9,10,59,5.224,5.079999999999999,7.399999999999999,9.4,6.775999999999999,Blue,2,"Doing well, improve further | Focus on academics",Rahul Verma,Wellness Mentor,Stress Management
+S025,21,B.Tech,5,5.09,87,80,8,4.7,10,5,3,10,5,34,6.534,5.48,5.9,8.0,6.4785,Blue,2,"Doing well, improve further | Manage stress | Improve sleep",Vikram Singh,Career Mentor,Resume Building
+S026,23,MBA,8,4.67,82,79,8,7.5,5,4,4,10,6,62,6.082000000000001,3.6,5.15,8.4,5.808,Yellow,2,Needs improvement | Manage stress,Simran Kaur,Career Mentor,Communication Skills
+S027,23,MCA,2,8.0,96,91,7,6.8,7,8,2,1,5,94,8.64,4.82,8.15,2.6,6.0525,Blue,1,"Doing well, improve further | Career guidance needed",Amit Kumar,Academic Mentor,Cloud & AWS
+S028,19,MCA,1,6.23,91,84,3,5.5,9,7,1,6,5,47,7.378,6.699999999999999,7.5,5.6,6.794499999999999,Blue,1,"Doing well, improve further | Improve sleep",Anjali Verma,Wellness Mentor,Mental Health Support
+S029,25,B.Sc,4,7.3,92,56,1,6.1,5,2,7,7,4,78,8.06,5.14,2.4000000000000004,5.800000000000001,5.35,Yellow,0,Needs improvement,Kavita Joshi,Wellness Mentor,Anxiety Management
+S030,21,MCA,4,9.49,60,65,1,5.3,1,1,8,8,3,40,8.094,2.4200000000000004,2.15,6.0,4.666,Yellow,0,Needs improvement | Improve sleep,Neha Singh,Career Mentor,Career Guidance
+S031,22,B.Sc,4,5.87,78,75,3,7.1,10,4,7,10,3,55,6.642,7.939999999999999,4.35,7.2,6.533,Blue,2,"Doing well, improve further",Pooja Mehta,Wellness Mentor,Motivation Coaching
+S032,18,MCA,5,6.76,61,97,6,4.4,10,8,5,9,4,92,6.496,5.96,7.850000000000001,7.0,6.8265,Blue,1,"Doing well, improve further | Improve sleep",Sneha Gupta,Career Mentor,Interview Preparation
+S033,21,B.Tech,1,8.66,85,98,7,4.0,1,2,1,2,9,88,8.596,0.1,5.7,4.8,4.799,Yellow,0,Needs improvement | Improve sleep | Career guidance needed,Neha Kapoor,Career Mentor,Placement Training
+S034,19,MCA,5,5.76,91,51,6,7.1,2,3,7,10,2,56,7.096,2.24,2.6500000000000004,6.8,4.6965,Yellow,0,Needs improvement,Arjun Patel,Academic Mentor,Machine Learning
+S035,23,B.Sc,7,4.92,65,50,6,5.0,6,1,7,2,9,78,5.552,3.8,1.6,4.8,3.938,Red,2,Immediate mentor support needed | Focus on academics | Improve sleep | Career guidance needed,Aditi Sharma,Academic Mentor,Python & Data Science
+S036,22,B.Sc,5,6.09,91,97,6,4.4,9,1,9,5,1,62,7.294,5.36,3.5500000000000007,3.4,4.901,Yellow,0,Needs improvement | Improve sleep | Career guidance needed,Ravi Sharma,Academic Mentor,Java Programming
+S037,21,MBA,1,5.39,63,61,3,6.0,8,3,3,5,1,30,5.754,6.300000000000001,3.9500000000000006,3.4,4.851,Yellow,2,Needs improvement | Focus on academics | Career guidance needed,Deepak Yadav,Academic Mentor,Data Structures
+S038,18,B.Tech,1,9.61,70,54,6,4.3,5,5,9,6,5,50,8.565999999999999,2.92,3.4000000000000004,5.6,5.121499999999999,Yellow,0,Needs improvement | Improve sleep,Manish Rao,Academic Mentor,System Design
+S039,18,MCA,7,8.94,76,86,8,8.4,1,3,1,3,6,84,8.404,1.5600000000000005,5.6,4.2,4.941,Yellow,0,Needs improvement | Manage stress | Career guidance needed,Rahul Verma,Wellness Mentor,Stress Management
+S040,20,MBA,1,7.98,97,81,2,4.1,7,1,1,8,6,35,8.668,5.24,4.35,7.2,6.3645,Blue,0,"Doing well, improve further | Improve sleep",Vikram Singh,Career Mentor,Resume Building
+S041,20,MCA,8,9.29,83,58,5,6.9,5,1,4,1,3,98,8.893999999999998,4.26,2.6000000000000005,1.8000000000000005,4.3885,Yellow,0,Needs improvement | Career guidance needed,Simran Kaur,Career Mentor,Communication Skills
+S042,24,MCA,1,8.92,64,90,1,6.2,6,8,9,6,7,34,7.911999999999999,5.78,6.7,6.4,6.698,Blue,1,"Doing well, improve further",Amit Kumar,Academic Mentor,Cloud & AWS
+S043,19,MBA,4,5.53,93,84,1,7.4,7,10,6,4,9,32,7.038,6.86,7.999999999999999,6.0,6.9745,Blue,1,"Doing well, improve further",Anjali Verma,Wellness Mentor,Mental Health Support
+S044,25,MBA,8,9.41,65,68,5,5.6,3,2,3,1,10,82,8.246,2.539999999999999,3.8,4.6,4.7965,Yellow,0,Needs improvement | Improve sleep | Career guidance needed,Kavita Joshi,Wellness Mentor,Anxiety Management
+S045,21,MBA,8,7.47,81,97,3,4.8,10,3,1,7,8,52,7.721999999999999,7.02,6.15,7.4,7.073,Blue,1,"Doing well, improve further | Improve sleep",Neha Singh,Career Mentor,Career Guidance
+S046,21,MBA,7,8.94,70,65,4,8.9,3,2,4,9,6,82,8.164,4.16,3.45,7.8,5.8935,Yellow,0,Needs improvement,Pooja Mehta,Wellness Mentor,Motivation Coaching
+S047,25,MBA,3,9.43,75,52,3,8.2,5,3,9,4,8,66,8.658,5.379999999999999,2.3,5.6,5.484499999999999,Yellow,0,Needs improvement,Sneha Gupta,Career Mentor,Interview Preparation
+S048,24,MCA,3,6.25,92,69,1,8.3,6,7,3,4,5,46,7.43,6.62,6.35,4.4,6.199999999999999,Blue,1,"Doing well, improve further | Career guidance needed",Neha Kapoor,Career Mentor,Placement Training
+S049,23,MBA,1,5.11,68,73,1,5.3,9,1,9,6,8,30,5.7860000000000005,7.22,2.3500000000000005,6.8,5.539000000000001,Yellow,2,Needs improvement | Focus on academics | Improve sleep,Arjun Patel,Academic Mentor,Machine Learning
+S050,23,B.Tech,8,5.75,65,82,5,4.2,5,10,7,3,10,80,6.05,3.18,7.700000000000001,5.8,5.6825,Yellow,1,Needs improvement | Improve sleep,Aditi Sharma,Academic Mentor,Python & Data Science

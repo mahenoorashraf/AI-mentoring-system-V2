@@ -1,0 +1,11 @@
+Accuracy: 0.9876543209876543
+
+              precision    recall  f1-score   support
+
+        Blue       1.00      0.97      0.98        29
+         Red       1.00      1.00      1.00        23
+      Yellow       0.97      1.00      0.98        29
+
+    accuracy                           0.99        81
+   macro avg       0.99      0.99      0.99        81
+weighted avg       0.99      0.99      0.99        81

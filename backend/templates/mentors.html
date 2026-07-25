@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mentors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>👨‍🏫 AI Mentors</h2>
+        <div>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/chatbot">Chatbot</a>
+            <a href="/reports">Reports</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Header Card -->
+        <div class="card">
+            <h1 style="margin-bottom: 10px;">Meet Your Expert Mentors</h1>
+            <p style="color: #475569;">
+                Search and filter mentors by expertise and mentor type.
+            </p>
+
+            <!-- Search + Filter -->
+            <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+                <input type="text" id="search" placeholder="Search mentor..." onkeyup="filterMentors()"
+                    style="flex: 1; min-width: 250px;">
+
+                <select id="filter" onchange="filterMentors()" style="width: 220px;">
+                    <option value="all">All Mentors</option>
+                    <option value="Academic Mentor">Academic Mentor</option>
+                    <option value="Career Mentor">Career Mentor</option>
+                    <option value="Wellness Mentor">Wellness Mentor</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Mentor Cards -->
+        {% if mentors %}
+        <div class="mentor-grid" id="mentor-list">
+            {% for mentor in mentors %}
+            <div class="mentor-card" data-name="{{ mentor.MentorName|lower }}"
+                data-expertise="{{ mentor.Expertise|lower }}" data-type="{{ mentor.MentorType }}">
+                <h3>{{mentor.MentorName }}</h3>
+
+                <p><strong>🆔 Mentor ID:</strong> {{ mentor.MentorID }}</p>
+                <p><strong>👨‍🏫 Type:</strong> {{ mentor.MentorType }}</p>
+                <p><strong>🎯 Expertise:</strong> {{ mentor.Expertise }}</p>
+                <p><strong>⏰ Availability:</strong> {{ mentor.AvailabilityHours }} hrs/week</p>
+                {% if mentor.MentorID in booked_ids %}
+
+                <button class="btn btn-secondary" disabled>
+                    Booked
+                </button>
+
+                {% else %}
+
+                <button class="btn btn-primary" onclick="bookSession('{{ mentor.MentorID }}', this)">
+                    Book Session
+                </button>
+
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="card">
+            <p>No mentors available.</p>
+        </div>
+        {% endif %}
+
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <!-- Filter Script -->
+    <script>
+        function filterMentors() {
+            const search = document.getElementById("search").value.toLowerCase();
+            const filter = document.getElementById("filter").value;
+            const cards = document.querySelectorAll(".mentor-card");
+
+            cards.forEach(card => {
+                const name = card.dataset.name;
+                const expertise = card.dataset.expertise;
+                const type = card.dataset.type;
+
+                const matchSearch =
+                    name.includes(search) ||
+                    expertise.includes(search);
+
+                const matchFilter =
+                    filter === "all" || type === filter;
+
+                card.style.display =
+                    (matchSearch && matchFilter) ? "block" : "none";
+            });
+        }
+    </script>
+
+</body>
+
+</html>
